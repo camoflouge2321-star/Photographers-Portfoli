@@ -1,0 +1,22 @@
+{
+  "name": "luca-moretti-photography",
+  "version": "1.0.0",
+  "description": "Premium photographer portfolio website with dark theme, gradient accents, gallery lightbox, and responsive design.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8765",
+    "start": "npx serve .",
+    "preview": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "photography",
+    "portfolio",
+    "website",
+    "dark-theme",
+    "gallery",
+    "lightbox"
+  ],
+  "author": "Luca Moretti",
+  "license": "MIT",
+  "private": true
+}

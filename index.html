@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luca Moretti | Photographer</title>
+  <meta name="description" content="Award-winning photographer specializing in weddings, portraits, landscapes, and editorial photography. Book a session today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-text">LUCA <em>MORETTI</em></span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="hero_bg.png" alt="Cinematic hero background" id="heroBgImg" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-aos>AWARD-WINNING PHOTOGRAPHY</p>
+      <h1 class="hero-title" data-aos>
+        Capturing<br/><em>Timeless</em><br/>Moments
+      </h1>
+      <p class="hero-subtitle" data-aos>Weddings · Portraits · Landscapes · Editorial</p>
+      <div class="hero-actions" data-aos>
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-outline">Book a Session</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Years of Experience</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">800+</span><span class="stat-label">Sessions Completed</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Awards Won</span></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrap" data-aos>
+        <img src="about_photo.png" alt="Luca Moretti - Photographer" class="about-photo" />
+        <div class="about-image-badge">
+          <span>Est.</span>
+          <strong>2012</strong>
+        </div>
+      </div>
+      <div class="about-text" data-aos>
+        <p class="section-eyebrow">About Me</p>
+        <h2 class="section-title">A Photographer<br/>with a <em>Passionate Eye</em></h2>
+        <p class="about-bio">Hello, I'm Luca. I believe every photograph is a portal — a window to a feeling, a story, a fleeting second in time, preserved forever. With over a decade behind the lens, I've had the privilege of capturing life's most extraordinary moments across the world.</p>
+        <p class="about-bio">From intimate wedding ceremonies in Tuscany to raw street scenes in Tokyo, my work is driven by an insatiable curiosity for the human experience and the beauty that surrounds us.</p>
+        <div class="about-skills">
+          <div class="skill-tag">Wedding</div>
+          <div class="skill-tag">Portrait</div>
+          <div class="skill-tag">Landscape</div>
+          <div class="skill-tag">Street</div>
+          <div class="skill-tag">Editorial</div>
+          <div class="skill-tag">Event</div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <p class="section-eyebrow">My Work</p>
+        <h2 class="section-title">Selected <em>Portfolio</em></h2>
+        <p class="section-desc">A curated collection of my finest work across various genres of photography.</p>
+      </div>
+
+      <div class="filter-tabs" data-aos>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="landscape">Landscape</button>
+        <button class="filter-btn" data-filter="street">Street</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid" data-aos>
+        <div class="gallery-item tall" data-category="wedding" data-index="0">
+          <img src="gallery_01.png" alt="Wedding Photography - Golden Sunset Silhouette" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Wedding</span>
+            <p class="gallery-caption">Golden Hour Ceremony</p>
+            <button class="gallery-zoom" aria-label="View full size">&#x2B;</button>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="portrait" data-index="1">
+          <img src="gallery_02.png" alt="Portrait Photography - Editorial Fashion" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Portrait</span>
+            <p class="gallery-caption">Editorial Fashion</p>
+            <button class="gallery-zoom" aria-label="View full size">&#x2B;</button>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="landscape" data-index="2">
+          <img src="gallery_03.png" alt="Landscape Photography - Mountain Lake Reflection" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Landscape</span>
+            <p class="gallery-caption">Mountain Reflection</p>
+            <button class="gallery-zoom" aria-label="View full size">&#x2B;</button>
+          </div>
+        </div>
+        <div class="gallery-item wide" data-category="street" data-index="3">
+          <img src="gallery_04.png" alt="Street Photography - Rainy City Nights" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Street</span>
+            <p class="gallery-caption">Midnight Rain</p>
+            <button class="gallery-zoom" aria-label="View full size">&#x2B;</button>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wedding" data-index="4">
+          <img src="gallery_05.png" alt="Event Photography - Elegant Gala" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Event</span>
+            <p class="gallery-caption">Gala Dinner</p>
+            <button class="gallery-zoom" aria-label="View full size">&#x2B;</button>
+          </div>
+        </div>
+        <div class="gallery-item tall" data-category="portrait" data-index="5">
+          <img src="gallery_06.png" alt="Nature Photography - Macro Flower" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Nature</span>
+            <p class="gallery-caption">Morning Dew</p>
+            <button class="gallery-zoom" aria-label="View full size">&#x2B;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImg" />
+        <p id="lightboxCaption"></p>
+      </div>
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <p class="section-eyebrow">What I Offer</p>
+        <h2 class="section-title">Services &amp; <em>Pricing</em></h2>
+        <p class="section-desc">Every package is crafted to deliver exceptional quality and a genuinely memorable experience.</p>
+      </div>
+      <div class="pricing-grid" data-aos>
+
+        <div class="pricing-card">
+          <div class="pricing-icon">📸</div>
+          <h3 class="pricing-name">Essential</h3>
+          <div class="pricing-price"><span class="price-currency">$</span>400</div>
+          <p class="pricing-desc">Perfect for intimate sessions and personal portraits.</p>
+          <ul class="pricing-features">
+            <li>✓ 2-Hour Photo Session</li>
+            <li>✓ 1 Location</li>
+            <li>✓ 30 Edited Photos</li>
+            <li>✓ Online Gallery</li>
+            <li>✓ High-Res Downloads</li>
+            <li class="muted">✗ Prints Included</li>
+            <li class="muted">✗ Rush Delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Book Essential</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-icon">✨</div>
+          <h3 class="pricing-name">Signature</h3>
+          <div class="pricing-price"><span class="price-currency">$</span>850</div>
+          <p class="pricing-desc">The ideal choice for weddings and special occasions.</p>
+          <ul class="pricing-features">
+            <li>✓ Full-Day Coverage (8 hrs)</li>
+            <li>✓ Unlimited Locations</li>
+            <li>✓ 100+ Edited Photos</li>
+            <li>✓ Private Online Gallery</li>
+            <li>✓ High-Res Downloads</li>
+            <li>✓ 10 Premium Prints</li>
+            <li>✓ 48-hr Rush Delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Book Signature</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-icon">👑</div>
+          <h3 class="pricing-name">Elite</h3>
+          <div class="pricing-price"><span class="price-currency">$</span>1,500</div>
+          <p class="pricing-desc">The ultimate luxury experience for discerning clients.</p>
+          <ul class="pricing-features">
+            <li>✓ 2-Day Full Coverage</li>
+            <li>✓ Unlimited Locations</li>
+            <li>✓ 250+ Edited Photos</li>
+            <li>✓ Private Branded Gallery</li>
+            <li>✓ All File Formats</li>
+            <li>✓ 30 Fine-Art Prints</li>
+            <li>✓ Same-Day Highlights</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Book Elite</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos>
+        <p class="section-eyebrow">Client Love</p>
+        <h2 class="section-title">What They <em>Say</em></h2>
+      </div>
+      <div class="testimonials-track" data-aos>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Luca captured our wedding day in a way we never thought possible. Every photo tells our story beautifully. We cried looking at them. Absolutely magical."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <strong>Sophia &amp; Marco</strong>
+              <span>Wedding — Tuscany, Italy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The portraits Luca took for my brand were stunning. He has an incredible eye for light and composition. My followers absolutely loved them. Worth every penny!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div>
+              <strong>James Harrington</strong>
+              <span>Brand Portrait Session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Professional, creative, and a genuinely lovely person to work with. The gallery prints now hang in our home and everyone who visits asks about them. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>Amara Chen</strong>
+              <span>Landscape Fine Art Print</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info" data-aos>
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Let's Create<br/><em>Something Beautiful</em></h2>
+        <p class="contact-desc">Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you. Fill out the form and I'll get back to you within 24 hours.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div><strong>Location</strong><span>Milan, Italy · Available Worldwide</span></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div><strong>Email</strong><span>hello@lucamoretti.com</span></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div><strong>Phone</strong><span>+39 02 8765 4321</span></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.0 12.017.0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="packageSelect">Interested In</label>
+          <select id="packageSelect" name="package">
+            <option value="">Select a Package</option>
+            <option value="essential">Essential — $400</option>
+            <option value="signature">Signature — $850</option>
+            <option value="elite">Elite — $1,500</option>
+            <option value="custom">Custom Project</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sessionDate">Preferred Date</label>
+          <input type="date" id="sessionDate" name="sessionDate" />
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Me About Your Vision</label>
+          <textarea id="message" name="message" rows="4" placeholder="Describe your dream shoot, location ideas, special moments you'd like captured..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+          <span>Send Message</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess">
+          <span>🎉</span> Thank you! I'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">LUCA <em>MORETTI</em></div>
+      <p class="footer-tagline">Capturing moments. Creating memories.</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2024 Luca Moretti Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
